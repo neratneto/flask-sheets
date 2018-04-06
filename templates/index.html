@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body>
+
+      <h3>ID e Game name</h3>
+      <form action="{{ url_for('checkout') }}" method="post">
+        <p>Game name: <input type="text" name="game"></p>
+        <p>ID: <input type="number" name="id"></p>
+        <input type="submit">
+      </form>
+
+
+      <h3>ID, Full name, Address, Telephone</h3>
+      <form action="{{ url_for('register') }}" method="post">
+        <p>ID: <input type="number" name="id"></p>
+        <p>Full name: <input type="text" name="name"></p>
+        <p>Address: <input type="text" name="address"></p>
+        <p>Telephone: <input type="tel" name="tel"></p>
+        <p>Admin password: <input type="password" name="admin_password"></p>
+        <input type="submit">
+      </form>
+
+
+    {% block response %}{% endblock %}
+  </body>
+</html>

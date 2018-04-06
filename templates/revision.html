@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body>
+
+      <form action="{{ url_for('revision') }}" method="post">
+        <p>ID: <input type="number" name="id"></p>
+        <p>Game name: <input type="text" name="game"></p>
+        <p>Revised? <input type="checkbox" name="checkbox"></p>
+        <p>Admin password: <input type="password" name="admin_password"></p>
+        <input type="submit">
+      </form>
+
+  </body>
+</html>
